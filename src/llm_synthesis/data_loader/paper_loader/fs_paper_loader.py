@@ -24,11 +24,11 @@ class FSPaperLoader(PaperLoaderInterface):
         for file in self.fs.ls(self.data_dir):
             if file.endswith("SI.txt"):
                 continue
+            # potentially this bit below needs to be modified to also close the files as 
+            # this could slow down the pipeline efficiency, especially when going through multiple pdfs
             paper = Paper(
-                publication_text=self.fs.open(file, "r").read(),
-                si_text=self.fs.open(
-                    file.replace(".txt", "_SI.txt"), "r"
-                ).read()
+                publication_text=self.fs.open(file, "r", encoding="utf-8", errors="replace").read(),
+                si_text=self.fs.open(file.replace(".txt", "_SI.txt"), "r", encoding="utf-8", errors="replace").read()
                 if self.fs.exists(file.replace(".txt", "_SI.txt"))
                 else "",
                 name=file.split("/")[-1].split(".")[0],
