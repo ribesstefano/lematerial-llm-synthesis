@@ -160,5 +160,4 @@ Cite us:
   journal={arXiv preprint arXiv:2510.26824},
   year={2025}
 }
-}
 ```
