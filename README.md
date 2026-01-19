@@ -6,6 +6,9 @@ An open-source multi-modal toolbox for extracting structured synthesis procedure
 
 ![](assets/overview.png)
 
+[![Paper](https://img.shields.io/badge/arXiv-2512.04562-b31b1b.svg)](https://arxiv.org/abs/2510.26824)
+[![Dataset](https://img.shields.io/badge/🤗%20HuggingFace-Dataset-yellow)](https://huggingface.co/datasets/LeMaterial/LeMat-Synth)
+
 ---
 
 ## Quick Start
@@ -141,3 +144,21 @@ uv run examples/scripts/case_study_thermocatalysis/downsample_with_llm.py --prom
 ```
 
 ---
+
+## 📝 Citation
+
+Cite us:
+
+```bibtex
+@article{lederbauer2025lemat,
+  title={LeMat-Synth: a multi-modal toolbox to curate broad synthesis procedure databases from scientific literature},
+  author={Lederbauer, Magdalena and Betala, Siddharth and Li, Xiyao and Jain, Ayush and Sehaba, Amine and
+          Channing, Georgia and Germain, Gr{\'e}goire and Leonescu, Anamaria and Flaifil, Faris and
+          Amayuelas, Alfonso and Nozadze, Alexandre and Schmid, Stefan P. and Zaki, Mohd
+          and Ethirajan, Sudheesh Kumar and Pan, Elton and Franckel, Mathilde
+          and Duval, Alexandre and Krishnan, N. M. Anoop and Gleason, Samuel P.},
+  journal={arXiv preprint arXiv:2510.26824},
+  year={2025}
+}
+}
+```
