@@ -8,6 +8,7 @@ from llm_synthesis.models.dino import FigureSegmenter
 from llm_synthesis.models.figure import FigureInfo
 from llm_synthesis.models.florence import FlorenceSegmenter
 from llm_synthesis.models.resnet import (
+    QUANT_FIGURE_CATEGORIES,
     FigureClassifier,
 )
 from llm_synthesis.transformers.figure_extraction.base import (
@@ -47,7 +48,7 @@ class HFFigureExtractor(FigureExtractorInterface):
 
         if segmenter == "florence":
             self.segmenter = FlorenceSegmenter(repo_id=florence_repo_id)
-            self.classifier = None  # Florence handles classification
+            self.classifier = FigureClassifier()
         else:
             self.segmenter = FigureSegmenter()
             self.classifier = FigureClassifier()
@@ -148,11 +149,6 @@ class HFFigureExtractor(FigureExtractorInterface):
 
         for i, detection in enumerate(detections):
             try:
-                # Florence provides both image and label
-                is_quantitative = self.segmenter.is_quantitative(
-                    detection.label
-                )
-
                 figure_info = FigureInfo(
                     base64_data=self.segmenter._image_to_base64(
                         detection.image
@@ -162,9 +158,23 @@ class HFFigureExtractor(FigureExtractorInterface):
                     context_before="",
                     context_after="",
                     figure_reference=f"{figure_path}_subfigure_{i + 1}",
-                    figure_class=detection.label,
-                    quantitative=is_quantitative,
+                    figure_class="Unknown",
+                    quantitative=False,
                 )
+
+                # Classify using ResNet classifier
+                try:
+                    predicted_label = self.classifier.predict(detection.image)
+                    figure_info.figure_class = predicted_label
+
+                    if predicted_label in QUANT_FIGURE_CATEGORIES:
+                        figure_info.quantitative = True
+                except Exception as e:
+                    print(
+                        f"Failed to classify subfig. {i + 1}",
+                        f"from {figure_path}: {e}",
+                    )
+
                 results.append(figure_info)
 
             except Exception as e:
@@ -217,37 +227,7 @@ class HFFigureExtractor(FigureExtractorInterface):
                     predicted_label = self.classifier.predict(subfigure)
                     figure_info.figure_class = predicted_label
 
-                    # Check if the predicted label is a quantitative figure
-                    if predicted_label in [
-                        # "3D objects",
-                        # "Algorithm",
-                        # "Area chart",
-                        "Bar plots",
-                        # "Block diagram",
-                        "Box plot",
-                        "Bubble Chart",
-                        "Confusion matrix",
-                        "Contour plot",
-                        # "Flow chart",
-                        # "Geographic map",
-                        "Graph plots",
-                        "Heat map",
-                        "Histogram",
-                        # "Mask",
-                        # "Medical images",
-                        # "Natural images",
-                        "Pareto charts",
-                        "Pie chart",
-                        "Polar plot",
-                        "Radar chart",
-                        "Scatter plot",
-                        # "Sketches",
-                        "Surface plot",
-                        # "Tables",
-                        # "Tree Diagram",
-                        "Vector plot",
-                        # "Venn Diagram",
-                    ]:
+                    if predicted_label in QUANT_FIGURE_CATEGORIES:
                         figure_info.quantitative = True
                     else:
                         figure_info.quantitative = False

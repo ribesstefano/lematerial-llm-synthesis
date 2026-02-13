@@ -6,6 +6,7 @@ from llm_synthesis.models.dino import FigureSegmenter
 from llm_synthesis.models.figure import FigureInfo
 from llm_synthesis.models.florence import FlorenceSegmenter
 from llm_synthesis.models.resnet import (
+    QUANT_FIGURE_CATEGORIES,
     FigureClassifier,
 )
 from llm_synthesis.transformers.figure_extraction.base import (
@@ -28,7 +29,7 @@ class FigureExtractorMarkdown(FigureExtractorInterface):
 
     def __init__(
         self,
-        segmenter: Literal["dino", "florence"] = "dino",
+        segmenter: Literal["dino", "florence"] = "florence",
         florence_repo_id: str = (
             "amayuelas/plot-visualization-florence-2-lora-32"
         ),
@@ -48,7 +49,7 @@ class FigureExtractorMarkdown(FigureExtractorInterface):
 
         if segmenter == "florence":
             self.segmenter = FlorenceSegmenter(repo_id=florence_repo_id)
-            self.classifier = None  # Florence handles classification
+            self.classifier = FigureClassifier()
         else:
             self.segmenter = FigureSegmenter()
             self.classifier = FigureClassifier()
@@ -107,8 +108,6 @@ class FigureExtractorMarkdown(FigureExtractorInterface):
             return [figure]
 
         for detection in detections:
-            is_quantitative = self.segmenter.is_quantitative(detection.label)
-
             figure_info = FigureInfo(
                 base64_data=self.segmenter._image_to_base64(detection.image),
                 alt_text=figure.alt_text,
@@ -116,9 +115,20 @@ class FigureExtractorMarkdown(FigureExtractorInterface):
                 context_before=figure.context_before,
                 context_after=figure.context_after,
                 figure_reference=figure.figure_reference,
-                figure_class=detection.label,
-                quantitative=is_quantitative,
+                figure_class="Unknown",
+                quantitative=False,
             )
+
+            # Classify using ResNet
+            try:
+                predicted_label = self.classifier.predict(detection.image)
+                figure_info.figure_class = predicted_label
+
+                if predicted_label in QUANT_FIGURE_CATEGORIES:
+                    figure_info.quantitative = True
+            except Exception as e:
+                print(f"Failed to classify subfigure: {e}")
+
             results.append(figure_info)
 
         return results
@@ -156,10 +166,7 @@ class FigureExtractorMarkdown(FigureExtractorInterface):
             predicted_label = self.classifier.predict(subfigure)
             figure_info.figure_class = predicted_label
 
-            # Check if the predicted label is a quantitative figure
-            if predicted_label in [
-                "Line plots",
-            ]:
+            if predicted_label in QUANT_FIGURE_CATEGORIES:
                 figure_info.quantitative = True
             else:
                 figure_info.quantitative = False
