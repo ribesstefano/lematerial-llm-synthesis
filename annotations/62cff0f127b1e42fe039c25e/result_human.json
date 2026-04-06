@@ -1,0 +1,235 @@
+{
+  "schema_version": "multi_llm_v1",
+  "paper_id": "62cff0f127b1e42fe039c25e",
+  "paper_url": "https://chemrxiv.org/engage/api-gateway/chemrxiv/assets/orp/resource/item/62cff0f127b1e42fe039c25e/original/probing-the-stability-of-sr-ir-o3-during-active-water-electrolysis-via-operando-atomic-force-microscopy.pdf",
+  "extractor_order": [
+    "claude-sonnet-4.6",
+    "gemini-3-flash",
+    "qwen3.5-397b-a17b",
+    "deepseek-v3.2"
+  ],
+  "materials": [
+    {
+      "material_name": "SrIrO3",
+      "human_recipe": {
+        "target_compound": "SrIrO3",
+        "target_compound_type": "ceramics & glasses",
+        "synthesis_method": "Pulsed laser deposition",
+        "starting_materials": [
+          {
+            "vendor": "Toshima Manufacturing, Japan",
+            "name": "SrIrO3 target",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          },
+          {
+            "vendor": "Shinkosha Co., Japan",
+            "name": "Nb-doped SrTiO3 (001) (0.5 wt% doping)",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          }
+        ],
+        "steps": [
+          {
+            "step_number": 1,
+            "action": "etch",
+            "description": "Etch all substrates with buffered HF solution (pH = 4.5)",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "buffered HF solution",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": 4.5
+            }
+          },
+          {
+            "step_number": 2,
+            "action": "anneal",
+            "description": "Anneal substrates to restore high-quality step terraces",
+            "materials": [],
+            "equipment": [],
+            "conditions": {
+              "temperature": 950.0,
+              "temp_unit": "C",
+              "duration": 2.0,
+              "time_unit": "hours",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "Argon flow",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 3,
+            "action": "deposit",
+            "description": "Grow SrIrO3 thin films by pulsed laser deposition",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "SrIrO3",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [],
+            "conditions": {
+              "temperature": 700.0,
+              "temp_unit": "C",
+              "duration": null,
+              "time_unit": null,
+              "pressure": 30.0,
+              "pressure_unit": "mTorr",
+              "atmosphere": "oxygen",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          }
+        ],
+        "equipment": [
+          {
+            "name": "pulsed laser deposition",
+            "instrument_vendor": "PLD/MBE 2300, PVD Products",
+            "settings": null
+          },
+          {
+            "name": "RHEED system",
+            "instrument_vendor": "Staib Instruments",
+            "settings": "TorrRHEED, operated at 35 kV (1.5 mA)"
+          }
+        ],
+        "notes": "The target to substrate distance was 84 mm, the laser fluence was 2 J/cm2. The growth was monitored in situ using a RHEED system. Some samples were grown under 15 mTorr."
+      },
+      "evaluations": [
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        }
+      ]
+    }
+  ]
+}

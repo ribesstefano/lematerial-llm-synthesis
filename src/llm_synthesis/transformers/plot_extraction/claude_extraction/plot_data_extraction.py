@@ -17,27 +17,50 @@ class ClaudeLinePlotDataExtractor(LinePlotDataExtractorInterface):
     def __init__(
         self,
         model_name: str,
-        prompt: str = resources.LINE_CHART_PROMPT,
+        prompt: str = resources.LINE_CHART_PROMPT_WITH_CONTEXT,
         max_tokens: int = 1024,
         temperature: float = 0.0,
+        use_figure_context: bool = True,
     ):
+        super().__init__()
         self.claude_client = ClaudeAPIClient(model_name)
         self.prompt = prompt
         self.max_tokens = max_tokens
         self.temperature = temperature
+        self.use_figure_context = use_figure_context
 
     def forward(
         self,
         input: FigureInfoWithPaper,
     ) -> ExtractedLinePlotData:
         figure_base64 = input.base64_data
-        claude_response = self.claude_client.vision_model_api_call(
+
+        self.claude_client.reset_cost()
+
+        # Build prompt with or without figure context
+        if self.use_figure_context:
+            figure_context = f"{input.context_before}\n{input.context_after}"
+            prompt = self.prompt.format(figure_context=figure_context)
+        else:
+            prompt = self.prompt
+
+        # Use the cost-aware method
+        claude_response_obj = self.claude_client.vision_model_api_call(
             figure_base64=figure_base64,
-            prompt=self.prompt,
+            prompt=prompt,
             max_tokens=self.max_tokens,
             temperature=self.temperature,
         )
-        return self._parse_into_pydantic(claude_response)
+
+        return self._parse_into_pydantic(claude_response_obj)
+
+    def get_cost(self) -> float:
+        """Get cumulative cost from Claude client."""
+        return self.claude_client.get_cost()
+
+    def reset_cost(self) -> float:
+        """Reset costs in Claude client."""
+        return self.claude_client.reset_cost()
 
     def _parse_into_pydantic(self, response: str) -> ExtractedLinePlotData:
         """

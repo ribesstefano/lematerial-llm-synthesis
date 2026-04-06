@@ -1,0 +1,556 @@
+{
+  "schema_version": "multi_llm_v1",
+  "paper_id": "1902.03049",
+  "paper_url": "http://arxiv.org/pdf/1902.03049v1",
+  "extractor_order": [
+    "claude-sonnet-4.6",
+    "gemini-3-flash",
+    "qwen3.5-397b-a17b",
+    "deepseek-v3.2"
+  ],
+  "materials": [
+    {
+      "material_name": "5-AGNR",
+      "human_recipe": {
+        "target_compound": "5-AGNR",
+        "target_compound_type": "two-dimensional materials",
+        "synthesis_method": "CVD",
+        "starting_materials": [
+          {
+            "vendor": null,
+            "name": "3,9 (10)-dibromoperylene (DBP)",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          }
+        ],
+        "steps": [
+          {
+            "step_number": 1,
+            "action": "heat",
+            "description": "Annealing of 3,9 (10)-dibromoperylene (DBP) monomer",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "3,9 (10)-dibromoperylene (DBP)",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "tube furnace",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": 350.0,
+              "temp_unit": "°C",
+              "duration": null,
+              "time_unit": null,
+              "pressure": 1.5,
+              "pressure_unit": "mbar",
+              "atmosphere": "Ar (500 sccm) and H2 (100 sccm)",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          }
+        ],
+        "equipment": [
+          {
+            "name": "tube furnace",
+            "instrument_vendor": null,
+            "settings": null
+          }
+        ],
+        "notes": null
+      },
+      "evaluations": [
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        }
+      ]
+    },
+    {
+      "material_name": "9-AGNR",
+      "human_recipe": {
+        "target_compound": "9-AGNR",
+        "target_compound_type": "two-dimensional materials",
+        "synthesis_method": "CVD",
+        "starting_materials": [
+          {
+            "vendor": null,
+            "name": "3',6'-dibromo-1,1':2',1''-terphenyl (DBTP)",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          }
+        ],
+        "steps": [
+          {
+            "step_number": 1,
+            "action": "heat",
+            "description": "9-AGNR was prepared starting from 3',6'-dibromo-1,1':2',1''-terphenyl (DBTP) as the monomer at an annealing temperature of 400 °C",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "3',6'-dibromo-1,1':2',1''-terphenyl (DBTP)",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "tube furnace",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": 400.0,
+              "temp_unit": "°C",
+              "duration": null,
+              "time_unit": null,
+              "pressure": 1.5,
+              "pressure_unit": "mbar",
+              "atmosphere": "Ar (500 sccm) and H2 (100 sccm)",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          }
+        ],
+        "equipment": [
+          {
+            "name": "tube furnace",
+            "instrument_vendor": null,
+            "settings": null
+          }
+        ],
+        "notes": null
+      },
+      "evaluations": [
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        }
+      ]
+    },
+    {
+      "material_name": "5n-AGNR",
+      "human_recipe": {
+        "target_compound": "5n-AGNR",
+        "target_compound_type": "nanomaterials",
+        "synthesis_method": "CVD",
+        "starting_materials": [
+          {
+            "vendor": null,
+            "name": "3,9 (10)-dibromoperylene",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          }
+        ],
+        "steps": [
+          {
+            "step_number": 1,
+            "action": "heat",
+            "description": "5-AGNR was prepared from 3,9 (10)-dibromoperylene (DBP) by setting the annealing temperature at 350 °C.",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "3,9 (10)-dibromoperylene",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "tube furnace",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": 350.0,
+              "temp_unit": "°C",
+              "duration": null,
+              "time_unit": null,
+              "pressure": 1.5,
+              "pressure_unit": "mbar",
+              "atmosphere": "Ar (500 sccm) and H2 (100 sccm)",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 2,
+            "action": "heat",
+            "description": "By increasing the annealing temperature, 5-AGNR can undergo lateral fusion into wider GNRs. Fixing the annealing temperature at 600 °C, the resulting GNRs are a mixture of 10-AGNR and non-negligible amounts of 5-AGNR, 15-AGNR and 20-AGNR",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "5-AGNR",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "tube furnace",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": 600.0,
+              "temp_unit": "°C",
+              "duration": null,
+              "time_unit": null,
+              "pressure": 1.5,
+              "pressure_unit": "mbar",
+              "atmosphere": "Ar (500 sccm) and H2 (100 sccm)",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          }
+        ],
+        "equipment": [
+          {
+            "name": "tube furnace",
+            "instrument_vendor": null,
+            "settings": null
+          }
+        ],
+        "notes": "The sample labelled 5n-AGNR is a mixture containing mainly 10-AGNR and also some amounts of 5-, 15-, and 20-AGNRs."
+      },
+      "evaluations": [
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        }
+      ]
+    }
+  ]
+}

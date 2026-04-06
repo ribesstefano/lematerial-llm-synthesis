@@ -1,0 +1,371 @@
+{
+  "schema_version": "multi_llm_v1",
+  "paper_id": "3325ac6dfb049a5efdaad7f876c1d51b17be0158",
+  "paper_url": "https://www.nature.com/articles/srep35721.pdf",
+  "extractor_order": [
+    "claude-sonnet-4.6",
+    "gemini-3-flash",
+    "qwen3.5-397b-a17b",
+    "deepseek-v3.2"
+  ],
+  "materials": [
+    {
+      "material_name": "Fe3O4",
+      "human_recipe": {
+        "target_compound": "Fe3O4",
+        "target_compound_type": "nanomaterials",
+        "synthesis_method": "solvothermal",
+        "starting_materials": [
+          {
+            "vendor": "Sigma–Aldrich",
+            "name": "Ferric chloride hexahydrate",
+            "amount": 2.4,
+            "unit": "gm",
+            "purity": "analytical grade"
+          },
+          {
+            "vendor": "Sigma–Aldrich",
+            "name": "ethylene glycol",
+            "amount": 40.0,
+            "unit": "ml",
+            "purity": "analytical grade"
+          },
+          {
+            "vendor": "Sigma–Aldrich",
+            "name": "ethyl alcohol",
+            "amount": 20.0,
+            "unit": "ml",
+            "purity": "analytical grade"
+          },
+          {
+            "vendor": "Sigma–Aldrich",
+            "name": "Urea",
+            "amount": 1.06,
+            "unit": "gm",
+            "purity": "analytical grade"
+          },
+          {
+            "vendor": "Sigma–Aldrich",
+            "name": "oleylamine",
+            "amount": null,
+            "unit": "ml",
+            "purity": "analytical grade"
+          }
+        ],
+        "steps": [
+          {
+            "step_number": 1,
+            "action": "mix",
+            "description": "mixing Ferric chloride hexahydrate in Ethylene Glycol (EG) and ethyl alcohol solution",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "Ferric chloride hexahydrate",
+                "amount": 2.4,
+                "unit": "gm",
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "ethylene glycol",
+                "amount": 40.0,
+                "unit": "ml",
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "ethyl alcohol",
+                "amount": 20.0,
+                "unit": "ml",
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "magnetic stirrer",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": true,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 2,
+            "action": "add",
+            "description": "adding Urea and oleylamine in the above solution",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "Urea",
+                "amount": 1.06,
+                "unit": "gm",
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "oleylamine",
+                "amount": null,
+                "unit": "ml",
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "magnetic stirrer",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": true,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 3,
+            "action": "transfer",
+            "description": "Pour the clear solution into 80 mL Teflon-lined stainless-steel autoclaves",
+            "materials": [],
+            "equipment": [
+              {
+                "name": "autoclave",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 4,
+            "action": "heat",
+            "description": "Seal and heat at 180 °C for 15 h",
+            "materials": [],
+            "equipment": [
+              {
+                "name": "autoclave",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": 180.0,
+              "temp_unit": "°C",
+              "duration": 15.0,
+              "time_unit": "hrs",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 5,
+            "action": "wash",
+            "description": "washing the resultant black solutions in alcohol for several times",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "alcohol",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 6,
+            "action": "dry",
+            "description": "drying the washed solution",
+            "materials": [],
+            "equipment": [],
+            "conditions": {
+              "temperature": 60.0,
+              "temp_unit": "°C",
+              "duration": null,
+              "time_unit": "overnight",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          }
+        ],
+        "equipment": [
+          {
+            "name": "magnetic stirrer",
+            "instrument_vendor": null,
+            "settings": null
+          },
+          {
+            "name": "80 mL Teflon-lined stainless-steel autoclave",
+            "instrument_vendor": null,
+            "settings": "180 °C for 15 h"
+          },
+          {
+            "name": "Drying oven",
+            "instrument_vendor": null,
+            "settings": "60 °C for overnight"
+          }
+        ],
+        "notes": "Particles were prepared in three different amount of oleylamine such as 2ml, 3ml and 4ml to see the effect of change of concentration of oleylamine and to understand the mechanism of formation of NHS."
+      },
+      "evaluations": [
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        }
+      ]
+    }
+  ]
+}

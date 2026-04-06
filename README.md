@@ -1,13 +1,26 @@
 ![](assets/lematerial-logo.png)
 
-# LeMaterial-Synthesis-Parser (LeMat-SynthP)
+# LeMaterial-Synthesis
 
-LeMaterial's LLM-based academic paper parsing module
+An open-source multi-modal toolbox for extracting structured synthesis procedures and performance data from materials science literature at scale. This repository contains the implementations of [LeMat-Synth v1.0](https://arxiv.org/abs/2510.26824) (published on the arXiv and presented at NeurIPS AI4Mat 2025) plus the extendable codebase for usecases in materials science.
 
-## Installation
+![](assets/overview.png)
 
-This project uses **uv** as a package & project manager. See [uv’s README](https://github.com/astral-sh/uv?tab=readme-ov-file#installation) for installation instructions.
+[![Paper](https://img.shields.io/badge/arXiv-2512.04562-b31b1b.svg)](https://arxiv.org/abs/2510.26824)
+[![Dataset](https://img.shields.io/badge/🤗%20HuggingFace-Dataset-yellow)](https://huggingface.co/datasets/LeMaterial/LeMat-Synth)
 
+---
+
+## Quick Start
+
+<details>
+<summary><b>Installation Instructions</b></summary>
+
+### Prerequisites
+
+This project uses **uv** as a package & project manager. See [uv's README](https://github.com/astral-sh/uv?tab=readme-ov-file#installation) for installation instructions.
+
+### Setup
 ```bash
 # 1. Clone & enter the repo
 git clone https://github.com/LeMaterial/lematerial-llm-synthesis.git
@@ -20,81 +33,157 @@ uv venv -p 3.11 --seed
 uv sync && uv pip install -e .
 ```
 
-### macOS/Linux
+### API Key Configuration
 
+<details>
+<summary><b>macOS/Linux</b></summary>
 ```bash
 cp .env.example .env
 # Edit `.env` to add:
 #   MISTRAL_API_KEY=your_api_key # if using Mistral models and Mistral OCR
 #   OPENAI_API_KEY=your_api_key # if using OpenAI models
 #   GEMINI_API_KEY=your_api_key # if using Gemini models
+#   ANTHROPIC_API_KEY=your_api_key # if using Anthropic models (Claude, image extraction)
 ```
 
-#### Load your API keys
-
 Before running the scripts, you need to load your API keys. For this you need to source the .env file. Run:
-
 ```bash
 source .env
 ```
 
-### Windows
+</details>
 
-- Search bar --> Edit the system environment variables --> Advanced --> click "Environment Variables..."
+<details>
+<summary><b>Windows</b></summary>
+
+- Search bar → Edit the system environment variables → Advanced → click "Environment Variables..."
 - Under "User variables for <your-username>" click "New" and add each:
-  - Variable name: MISTRAL_API_KEY; Value: your_api_key
-  - Variable name: OPENAI_API_KEY; Value: your_api_key
-  - Variable name: GEMINI_API_KEY; Value: your_api_key
-  - Variable name: GOOGLE_APPLICATION_CREDENTIALS; Value: C:\path\to\service-account.json
+  - Variable name: `MISTRAL_API_KEY`; Value: `your_api_key`
+  - Variable name: `OPENAI_API_KEY`; Value: `your_api_key`
+  - Variable name: `GEMINI_API_KEY`; Value: `your_api_key`
+  - Variable name: `GOOGLE_APPLICATION_CREDENTIALS`; Value: `C:\path\to\service-account.json`
 
-For any platform you can always load .env-style keys in code via `os.environ.get(...)`.
+</details>
 
-### Verify installation
+**Note:** For any platform you can always load .env-style keys in code via `os.environ.get(...)`.
 
-```
+### Verify Installation
+```bash
 uv run python -c "import llm_synthesis"
 ```
 
 No errors? You're all set!
 
-## Fetching Huggingface Dataset LeMat-Synth
+</details>
 
-The data is hosted as a LeMaterial Dataset on HuggingFace ([see here](https://huggingface.co/datasets/LeMaterial/LeMat-Synth/settings)).
-In order to download and use it, apply for access once (the request will be instantly approved). Install the huggingafce-cli (use [this guide](https://huggingface.co/docs/huggingface_hub/en/guides/cli), recommended: `pip install -U "huggingface_hub[cli]"` or `brew install huggingface-cli` (macOS)) and log in with an access token (`huggingface-cli login`).
+---
+
+## Dataset Access
+
+<details>
+<summary><b>Fetching HuggingFace Dataset LeMat-Synth</b></summary>
+
+The data is hosted as a LeMaterial Dataset on HuggingFace: [LeMat-Synth](https://huggingface.co/datasets/LeMaterial/LeMat-Synth/)
+
+### Access Steps
+
+1. **Apply for access** (request will be instantly approved)
+2. **Install HuggingFace CLI** ([guide](https://huggingface.co/docs/huggingface_hub/en/guides/cli))
+   - Recommended: `pip install -U "huggingface_hub[cli]"`
+   - Or (macOS): `brew install huggingface-cli`
+3. **Login with access token**: `huggingface-cli login`
+
+### Available Datasets
+
+- **[LeMat-Synth](https://huggingface.co/datasets/LeMaterial/LeMat-Synth/)**: Synthesis procedures and images in structured (per-synthesis) format
+- **[LeMat-Synth-Papers](https://huggingface.co/datasets/LeMaterial/LeMat-Synth-Papers/)**: Intermediate dataset storing papers in per-paper format
+
+</details>
+
+---
 
 ## Usage
 
-### Text Extraction
-
-For usage in a notebook, cf. `notebooks/pdf_extraction.ipynb`
-
-```sh
-uv run examples/scripts/extract_text_from_pdfs.py --input-path <local folder containing the pdfs> --output-path <local folder where the extracted text will be saved> --process <"docling" or "mistral">
+### Extract from HuggingFace Dataset
+```bash
+uv run examples/scripts/extract_synthesis_procedure_from_text.py \
+  data_loader=default \
+  synthesis_extraction=default \
+  material_extraction=default \
+  judge=default \
+  result_save=default
 ```
 
-For example, this will extract text from `./data/pdf_papers` and write the result to `./data/txt_papers/docling` using Docling:
-
-```sh
-uv run examples/scripts/extract_text_from_pdfs.py --input-path data/pdf_papers --output-path data/txt_papers/docling --process docling
+### Extract Synthesis Locally
+```bash
+uv run examples/scripts/extract_synthesis_procedure_from_text.py \
+  data_loader=local \
+  data_loader.architecture.data_dir="/path/to/markdown" \
+  synthesis_extraction=default \
+  material_extraction=default \
+  judge=default \
+  result_save=default
 ```
 
-### Extracting a synthesis procedure from the parsed text
+### Extract Images Locally
 
-For usage in a notebook, cf. `notebooks/synthesis_procedure_extraction.ipynb`
+*Work in Progress*
 
-**Benchmark – Sweeping over different configurations**. DSPy designs LLM pipelines in a very modular way: The quality of the output is influenced by the LLM, prompting strategy, pre-processing steps etc.
-In order to keep track of every _moving part_ of our model, we use [hydra](https://hydra.cc/) to track experiments. We can run a specific configuration directly from the command line:
 
+
+### Thermocatalysis Case Study
+
+*Work in Progress*
+take pdf of catalysis papers (not part of open source corpus)
+
+```bash
+uv run python run_all_papers.py \​
+  /path/to/data/pdf_papers/catalysis_corpus \​
+  /path/to/data/results_catalysis/ \​
+  --skip-existing​
 ```
-uv run examples/scripts/extract_synthesis_procedure_from_text.py synthesis_extraction.architecture.lm.llm_name=gemini-2.0-flash
+
+this extracts ... <deascribe extracted data>
+
+Visualize results: noteboioks shows
+
+### Superconductor Case Study
+Filter down:
+```bash
+
+uv run examples/scripts/case_study_thermocatalysis/keyword_search.py
+uv run examples/scripts/case_study_thermocatalysis/downsample_with_llm.py --prompt default
+uv run examples/scripts/case_study_thermocatalysis/downsample_with_llm.py --prompt long
 ```
 
-To sweep over several configurations, use the flag `--multirun`:
+### Customize LeMat-Synth
+*Work in Progress*
+EXAMPLES HOW TO GENERALIZE/ABSTRACT EXTRACTION PIPELINE}
 
-```
-uv run examples/scripts/extract_synthesis_procedure_from_text.py --multirun \
-    synthesis_extraction.architecture.lm.llm_name=gemini-2.0-flash,gemini-2.5-flash,gpt-4o
+---
+
+## 📝 Citation
+
+Cite us:
+
+```bibtex
+@article{lederbauer2026mapping,
+  title={Mapping Materials Science: a multi-modal toolbox to curate broad synthesis procedure databases from scientific literature},
+  author={WIP},
+  journal={WIP},
+  year={2026}
+}
 ```
 
-The results of the runs are saved in `results/single_run` and `results/multi_run`, respectively. The synthesis paragraphs and structured synthesis procedures are saved and can be inspected there.
-**Metrics**: Note that the metrics are an arbitrary, random number at this stage.
+```bibtex
+@article{lederbauer2025lemat,
+  title={LeMat-Synth: a multi-modal toolbox to curate broad synthesis procedure databases from scientific literature},
+  author={Lederbauer, Magdalena and Betala, Siddharth and Li, Xiyao and Jain, Ayush and Sehaba, Amine and
+          Channing, Georgia and Germain, Gr{\'e}goire and Leonescu, Anamaria and Flaifil, Faris and
+          Amayuelas, Alfonso and Nozadze, Alexandre and Schmid, Stefan P. and Zaki, Mohd
+          and Ethirajan, Sudheesh Kumar and Pan, Elton and Franckel, Mathilde
+          and Duval, Alexandre and Krishnan, N. M. Anoop and Gleason, Samuel P.},
+  journal={arXiv preprint arXiv:2510.26824},
+  year={2025}
+}
+```

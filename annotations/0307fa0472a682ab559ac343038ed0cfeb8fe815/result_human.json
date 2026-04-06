@@ -1,0 +1,680 @@
+{
+  "schema_version": "multi_llm_v1",
+  "paper_id": "0307fa0472a682ab559ac343038ed0cfeb8fe815",
+  "paper_url": "https://www.mdpi.com/2076-3417/10/3/1178/pdf?version=1581326140",
+  "extractor_order": [
+    "claude-sonnet-4.6",
+    "gemini-3-flash",
+    "qwen3.5-397b-a17b",
+    "deepseek-v3.2"
+  ],
+  "materials": [
+    {
+      "material_name": "Bi2-xSbxTe3",
+      "human_recipe": {
+        "target_compound": "Bi2-xSbxTe3",
+        "target_compound_type": "nanomaterials",
+        "synthesis_method": "microwave-assisted",
+        "starting_materials": [
+          {
+            "vendor": "Sigma Aldrich, Sweden",
+            "name": "BiCl3",
+            "amount": 1.6,
+            "unit": "g",
+            "purity": "98%"
+          },
+          {
+            "vendor": "Sigma Aldrich, Sweden",
+            "name": "SbCl3",
+            "amount": null,
+            "unit": null,
+            "purity": "99.95%"
+          },
+          {
+            "vendor": "Sigma Aldrich, Sweden",
+            "name": "Te powder",
+            "amount": 0.96,
+            "unit": "g",
+            "purity": "99.8%"
+          },
+          {
+            "vendor": "Sigma Aldrich, Sweden",
+            "name": "ethylene glycol",
+            "amount": 20.0,
+            "unit": "mL",
+            "purity": "99%"
+          },
+          {
+            "vendor": "Sigma Aldrich, Sweden",
+            "name": "thioglycolic acid",
+            "amount": 1.0,
+            "unit": "mL",
+            "purity": "98%"
+          },
+          {
+            "vendor": "Sigma Aldrich, Sweden",
+            "name": "tri-butyl phosphine",
+            "amount": 6.0,
+            "unit": "mL",
+            "purity": "93.5%"
+          },
+          {
+            "vendor": "Sigma Aldrich, Sweden",
+            "name": "tri-octyl phosphine",
+            "amount": 10.0,
+            "unit": "mL",
+            "purity": "90%"
+          }
+        ],
+        "steps": [
+          {
+            "step_number": 1,
+            "action": "heat",
+            "description": "Preparation of Te precursor solution as a complex with TBP (or TOP)",
+            "materials": [
+              {
+                "vendor": "Sigma Aldrich, Sweden",
+                "name": "Te powder",
+                "amount": 0.96,
+                "unit": "g",
+                "purity": "99.8%"
+              },
+              {
+                "vendor": "Sigma Aldrich, Sweden",
+                "name": "tri-butyl phosphine",
+                "amount": 6.0,
+                "unit": "mL",
+                "purity": "93.5%"
+              },
+              {
+                "vendor": "Sigma Aldrich, Sweden",
+                "name": "tri-octyl phosphine",
+                "amount": 10.0,
+                "unit": "mL",
+                "purity": "90%"
+              }
+            ],
+            "equipment": [
+              {
+                "name": "microwave reactor",
+                "instrument_vendor": "flexiWAVE-Milestone",
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": 220.0,
+              "temp_unit": "°C",
+              "duration": 90.0,
+              "time_unit": "s",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": true,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 2,
+            "action": "dissolve",
+            "description": "Preparation of Bi (or Sb) precursor solution",
+            "materials": [
+              {
+                "vendor": "Sigma Aldrich, Sweden",
+                "name": "BiCl3",
+                "amount": 1.6,
+                "unit": "g",
+                "purity": "98%"
+              },
+              {
+                "vendor": "Sigma Aldrich, Sweden",
+                "name": "ethylene glycol",
+                "amount": 20.0,
+                "unit": "mL",
+                "purity": "99%"
+              },
+              {
+                "vendor": "Sigma Aldrich, Sweden",
+                "name": "SbCl3",
+                "amount": null,
+                "unit": null,
+                "purity": "99.95%"
+              }
+            ],
+            "equipment": [],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 3,
+            "action": "add",
+            "description": "Addition of directing agent and sonication",
+            "materials": [
+              {
+                "vendor": "Sigma Aldrich, Sweden",
+                "name": "thioglycolic acid",
+                "amount": 1.0,
+                "unit": "mL",
+                "purity": "98%"
+              }
+            ],
+            "equipment": [
+              {
+                "name": "sonicator",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 4,
+            "action": "mix",
+            "description": "Mixing of Te-TOP complex and Bi/Sb-EG solutions",
+            "materials": [],
+            "equipment": [],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 5,
+            "action": "heat",
+            "description": "Microwave reaction",
+            "materials": [],
+            "equipment": [
+              {
+                "name": "microwave reactor",
+                "instrument_vendor": "flexiWAVE-Milestone",
+                "settings": null
+              },
+              {
+                "name": "Teflon vessel",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": 220.0,
+              "temp_unit": "°C",
+              "duration": 2.0,
+              "time_unit": "min",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": true,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 6,
+            "action": "cool",
+            "description": "Cooling to room temperature",
+            "materials": [],
+            "equipment": [],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 7,
+            "action": "centrifuge",
+            "description": "Separation and washing",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "iso-propanol",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "acetone",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "centrifuge",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          }
+        ],
+        "equipment": [
+          {
+            "name": "microwave reactor",
+            "instrument_vendor": "flexiWAVE-Milestone",
+            "settings": "1800 Watt; equipped with multivessel high pressure rotor"
+          },
+          {
+            "name": "Teflon vessel",
+            "instrument_vendor": null,
+            "settings": null
+          },
+          {
+            "name": "centrifuge",
+            "instrument_vendor": null,
+            "settings": null
+          },
+          {
+            "name": "sonicator",
+            "instrument_vendor": null,
+            "settings": null
+          }
+        ],
+        "notes": "The stoichiometry of ternary compositions can easily be tuned by replacing the BiCl3 precursor with equivalent moles of SbCl3. The synthesis work was performed via MW-assisted thermolysis reaction inside a 100 mL Teflon vessel, in 4 parallel reaction vessels at a single run. The product (dark powder), which is about 2 g per vessel, was then cooled down to room temperature. The multivessel high pressure rotor was used for the MW synthesis work, where only four of the fifteen reactor positions were more than enough to prepare large quantity (>8 g) of the desired materials in a single run."
+      },
+      "evaluations": [
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        }
+      ]
+    },
+    {
+      "material_name": "Bi2Te3",
+      "human_recipe": {
+        "target_compound": null,
+        "target_compound_type": null,
+        "synthesis_method": null,
+        "starting_materials": [],
+        "steps": [],
+        "equipment": [],
+        "notes": null
+      },
+      "evaluations": [
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        }
+      ]
+    },
+    {
+      "material_name": "Sb2Te3",
+      "human_recipe": {
+        "target_compound": null,
+        "target_compound_type": null,
+        "synthesis_method": null,
+        "starting_materials": [],
+        "steps": [],
+        "equipment": [],
+        "notes": null
+      },
+      "evaluations": [
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        }
+      ]
+    }
+  ]
+}

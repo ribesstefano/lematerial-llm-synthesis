@@ -24,10 +24,9 @@ htmlcov/
 logs/
 results/
 data/
+examples/data/figure_labeling/catalysis/*
 tmp/
 *.log
-*.csv # May be removed later for sample DB
-*.json
 *.db
 *.sqlite3
 .cache/
@@ -44,3 +43,5 @@ build/
 # OS-specific files
 .DS_Store
 Thumbs.db
+.git_backup/
+annotations/annotation_guide_catalysis/annotation_guide_recording.mov

@@ -1,0 +1,639 @@
+{
+  "schema_version": "multi_llm_v1",
+  "paper_id": "61b80eb702d90d55416229c1",
+  "paper_url": "https://chemrxiv.org/engage/api-gateway/chemrxiv/assets/orp/resource/item/61b80eb702d90d55416229c1/original/dendrite-free-alkali-metal-electrodeposition-from-contact-ion-pair-state-induced-by-mixing-alkaline-earth-cation.pdf",
+  "extractor_order": [
+    "claude-sonnet-4.6",
+    "gemini-3-flash",
+    "qwen3.5-397b-a17b",
+    "deepseek-v3.2"
+  ],
+  "materials": [
+    {
+      "material_name": "Li metal electrodeposits",
+      "human_recipe": {
+        "target_compound": "Li metal electrodeposits",
+        "target_compound_type": "metals & alloys",
+        "synthesis_method": "electrochemical deposition",
+        "starting_materials": [
+          {
+            "vendor": "SOLVIONIC Company and Kishida Chemical Co., Ltd.",
+            "name": "LiTFSA",
+            "amount": 0.5,
+            "unit": "mol",
+            "purity": "99.5%"
+          },
+          {
+            "vendor": "SOLVIONIC Company and Kishida Chemical Co., Ltd.",
+            "name": "NaTFSA",
+            "amount": 0.5,
+            "unit": "mol",
+            "purity": "99.5%"
+          },
+          {
+            "vendor": "SOLVIONIC Company and Kishida Chemical Co., Ltd.",
+            "name": "CaTFSA2",
+            "amount": 0.5,
+            "unit": "mol",
+            "purity": "99.5%"
+          },
+          {
+            "vendor": "Tokyo Chemical Industry Co., Ltd.",
+            "name": "G3",
+            "amount": null,
+            "unit": "L",
+            "purity": ">99.0%"
+          },
+          {
+            "vendor": "Takeuchi Metal Foil & Powder",
+            "name": "Cu foil",
+            "amount": "20",
+            "unit": "um",
+            "purity": null
+          }
+        ],
+        "steps": [
+          {
+            "step_number": 1,
+            "action": "prepare",
+            "description": "The electrolytes were prepared by using alkali-metal-TFSA (LiTFSA, CaTFSA2) salts as the solutes (TFSA- : bis(trifluoromethanesulfon)imide, [N(SO2CF3)2]- ) and a chain-like ether G3 as the solvent (G3: triethylene glycol dimethyl ether, C8H18O4).",
+            "materials": [
+              {
+                "vendor": "SOLVIONIC Company and Kishida Chemical Co., Ltd.",
+                "name": "LiTFSA",
+                "amount": 0.5,
+                "unit": "mol",
+                "purity": "99.5%"
+              },
+              {
+                "vendor": "SOLVIONIC Company and Kishida Chemical Co., Ltd.",
+                "name": "CaTFSA2",
+                "amount": 0.5,
+                "unit": "mol",
+                "purity": "99.5%"
+              },
+              {
+                "vendor": "Tokyo Chemical Industry Co., Ltd.",
+                "name": "G3",
+                "amount": 1,
+                "unit": "L",
+                "purity": ">99.0%"
+              }
+            ],
+            "equipment": [
+              {
+                "name": "gloveboxes",
+                "instrument_vendor": "Miwa Mfg Co., Ltd. and UNICO Ltd.",
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "high purity argon",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 2,
+            "action": "electrodeposition",
+            "description": "Constant potential (chronoamperometry) electrodeposition experiments in the Li, Li-Ca single-cation and dual-cation electrolytes.",
+            "materials": [
+              {
+                "vendor": "Takeuchi Metal Foil and Powder Co., Ltd.",
+                "name": "Cu foil",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": "Honjo Metal Co., Ltd.",
+                "name": "Li metal",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "potentiostat",
+                "instrument_vendor": "Bio-Logic SAS",
+                "settings": null
+              },
+              {
+                "name": "three-electrode beaker cells",
+                "instrument_vendor": "EC-frontier Co., Ltd",
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "high purity argon",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 3,
+            "action": "wash",
+            "description": "Electrodeposits were washed by dropping tetrahydrofuran (99.5%, FUJIFILM Wako Pure Chemical Corporation) and subsequently dried in argon atmosphere.",
+            "materials": [
+              {
+                "vendor": "FUJIFILM Wako Pure Chemical Corporation",
+                "name": "tetrahydrofuran (THF)",
+                "amount": null,
+                "unit": null,
+                "purity": "99.5%"
+              }
+            ],
+            "equipment": [],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "argon",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          }
+        ],
+        "equipment": [
+          {
+            "name": "Gloveboxes",
+            "instrument_vendor": "Miwa Mfg Co.; UNICO Ltd",
+            "settings": "high-purity Ar atmosphere"
+          },
+          {
+            "name": "Three-electrode beaker cell VM2A",
+            "instrument_vendor": "EC-frontier Co.",
+            "settings": "1 cm2"
+          },
+          {
+            "name": "Potentiostat",
+            "instrument_vendor": "Bio-Logic SAS",
+            "settings": "0.5 V"
+          },
+          {
+            "name": "Field Emission Scanning Electron Microscope (FE-SEM)",
+            "instrument_vendor": "JEOL Ltd.",
+            "settings": null
+          },
+          {
+            "name": "X-ray diffractometer",
+            "instrument_vendor": "Rigaku Corporation",
+            "settings": null
+          },
+          {
+            "name": "Soft X-ray emission spectroscopy (SXES)",
+            "instrument_vendor": "JEOL Ltd.",
+            "settings": null
+          },
+          {
+            "name": "Inductively coupled plasma optical emission spectroscopy (ICP-OES)",
+            "instrument_vendor": null,
+            "settings": null
+          },
+          {
+            "name": "Raman spectrometer",
+            "instrument_vendor": "JASCO corporation",
+            "settings": null
+          }
+        ],
+        "notes": null
+      },
+      "evaluations": [
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        }
+      ]
+    },
+    {
+      "material_name": "Na metal electrodeposits",
+      "human_recipe": {
+        "target_compound": "Na metal electrodeposits",
+        "target_compound_type": "metals & alloys",
+        "synthesis_method": "electrochemical deposition",
+        "starting_materials": [
+          {
+            "vendor": null,
+            "name": "NaTFSA",
+            "amount": 0.5,
+            "unit": "mol",
+            "purity": null
+          },
+          {
+            "vendor": null,
+            "name": "CaTFSA2",
+            "amount": 0.5,
+            "unit": "mol",
+            "purity": null
+          },
+          {
+            "vendor": "Tokyo Chemical Industry Co., Ltd.",
+            "name": "G3",
+            "amount": 1.0,
+            "unit": "L",
+            "purity": ">99.0%"
+          }
+        ],
+        "steps": [
+          {
+            "step_number": 1,
+            "action": "prepare",
+            "description": "Prepare the Na-Ca electrolyte by mixing NaTFSA and CaTFSA2 salts in G3 solvent.",
+            "materials": [
+              {
+                "vendor": "SOLVIONIC Company and Kishida Chemical Co., Ltd.",
+                "name": "NaTFSA",
+                "amount": 0.5,
+                "unit": "mol",
+                "purity": "99.5%"
+              },
+              {
+                "vendor": "SOLVIONIC Company and Kishida Chemical Co., Ltd.",
+                "name": "CaTFSA2",
+                "amount": 0.5,
+                "unit": "mol",
+                "purity": "99.5%"
+              },
+              {
+                "vendor": "Tokyo Chemical Industry Co., Ltd.",
+                "name": "G3",
+                "amount": 1.0,
+                "unit": "L",
+                "purity": ">99.0%"
+              }
+            ],
+            "equipment": [],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 2,
+            "action": "electrodeposition",
+            "description": "Conduct constant potential electrodeposition experiments in the Na-Ca dual-cation electrolytes using a three-electrode beaker cell.",
+            "materials": [],
+            "equipment": [
+              {
+                "name": "potentiostat",
+                "instrument_vendor": "Bio-Logic SAS",
+                "settings": null
+              },
+              {
+                "name": "three-electrode beaker cell",
+                "instrument_vendor": "EC-frontier Co., Ltd",
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "argon",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 3,
+            "action": "electrodeposition",
+            "description": "Set the electrodeposition potential to -0.5 V vs. Na.",
+            "materials": [],
+            "equipment": [],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 4,
+            "action": "electrodeposition",
+            "description": "Stop the electrodeposition when the areal capacity reaches 5 mAh cm-2.",
+            "materials": [],
+            "equipment": [],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 5,
+            "action": "wash",
+            "description": "Wash the electrodeposits by dropping tetrahydrofuran and subsequently dry in argon atmosphere.",
+            "materials": [
+              {
+                "vendor": "FUJIFILM Wako Pure Chemical Corporation",
+                "name": "tetrahydrofuran",
+                "amount": null,
+                "unit": null,
+                "purity": "99.5%"
+              }
+            ],
+            "equipment": [],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "argon",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          }
+        ],
+        "equipment": [
+          {
+            "name": "gloveboxes",
+            "instrument_vendor": "Miwa Mfg Co., Ltd. and UNICO Ltd.",
+            "settings": "high purity argon atmosphere"
+          },
+          {
+            "name": "Field Emission Scanning Electron Microscope",
+            "instrument_vendor": "JEOL Ltd.",
+            "settings": null
+          },
+          {
+            "name": "X-ray diffractometer",
+            "instrument_vendor": "Rigaku Corporation",
+            "settings": null
+          },
+          {
+            "name": "spectrometers",
+            "instrument_vendor": "JEOL Ltd.",
+            "settings": null
+          },
+          {
+            "name": "Raman spectrometer",
+            "instrument_vendor": "JASCO corporation",
+            "settings": null
+          }
+        ],
+        "notes": "The electrolytes were prepared in gloveboxes filled with high purity argon atmosphere. Cu foil was used as the working electrode. Na metal was used for the reference electrode and the counter electrode."
+      },
+      "evaluations": [
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        }
+      ]
+    }
+  ]
+}

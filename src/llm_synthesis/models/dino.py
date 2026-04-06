@@ -80,7 +80,7 @@ class FigureSegmenter:
         results = self.processor.post_process_grounded_object_detection(
             outputs,
             inputs.input_ids,
-            box_threshold=box_threshold,
+            # box_threshold=box_threshold,
             text_threshold=text_threshold,
             target_sizes=[image.size[::-1]],
         )
@@ -115,7 +115,7 @@ class FigureSegmenter:
         self,
         box,
         image_size,
-        expand_left_right=0.3,
+        expand_left_right=0.4,
         expand_bottom=0.3,
         expand_top=0.1,
     ):

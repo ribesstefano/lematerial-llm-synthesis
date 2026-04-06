@@ -1,0 +1,3496 @@
+{
+  "schema_version": "multi_llm_v1",
+  "paper_id": "c47e0cbc8b6feb8d28c3d9c1c29f98772ede6c27",
+  "paper_url": "https://link.springer.com/content/pdf/10.1007/s10973-014-4378-y.pdf",
+  "extractor_order": [
+    "claude-sonnet-4.6",
+    "gemini-3-flash",
+    "qwen3.5-397b-a17b",
+    "deepseek-v3.2"
+  ],
+  "materials": [
+    {
+      "material_name": "SSNi-0",
+      "human_recipe": {
+        "target_compound": "SSNi-0",
+        "target_compound_type": "hybrid & organic-inorganic",
+        "synthesis_method": "mechanochemical",
+        "starting_materials": [
+          {
+            "vendor": "Degussa, Germany",
+            "name": "Sipernat 50",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          },
+          {
+            "vendor": "Superior, Poland",
+            "name": "potato starch",
+            "amount": 0.3,
+            "unit": "mol",
+            "purity": null
+          },
+          {
+            "vendor": "POCh, Poland",
+            "name": "Ni(NO3)2-6H2O",
+            "amount": 0.0,
+            "unit": "mol",
+            "purity": null
+          }
+        ],
+        "steps": [
+          {
+            "step_number": 1,
+            "action": "mix",
+            "description": "Pre-grinding for 15 min, grinding Ni(NO3)2-6H2O and homogenization of the mixture",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "Ni(NO3)2-6H2O",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "Sipernat 50",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "potato starch",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Planetary Mill",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": 15.0,
+              "time_unit": "min",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": 500.0,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 2,
+            "action": "mix",
+            "description": "Grinding for 30 min (2 x 15 min), heating of the system, resulting starch gelation and better homogenization of the sample",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "Sipernat 50",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "potato starch",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "Ni(NO3)2-6H2O",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Planetary Mill",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": 30.0,
+              "time_unit": "min",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": 750.0,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 3,
+            "action": "heat",
+            "description": "Pyrolysis process",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "SSNi-0 mixture",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "rotary quartz reactor",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": 500.0,
+              "temp_unit": "C",
+              "duration": 3.0,
+              "time_unit": "h",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "nitrogen",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          }
+        ],
+        "equipment": [
+          {
+            "name": "Planetary Mill",
+            "instrument_vendor": "Fritsch, Germany",
+            "settings": null
+          },
+          {
+            "name": "rotary quartz reactor",
+            "instrument_vendor": null,
+            "settings": null
+          }
+        ],
+        "notes": "The molar ratio of SiO2/starch/Ni2+ was 1:0.3:0. Additionally, to examine the effect of mechanochemical treatment on porous structure of the matrix, the initial silicas were subjected to mechanochemical treatment under the same conditions and they are denoted A-200 M and S-50 M. The pyrolysis was carried out in a rotary quartz reactor in nitrogen atmosphere (120 cm3 min-1 ) using the following procedure: heating from 20 to 500 C (10 C min-1 ), isothermal annealing at 500 C (3 h) and cooling to room temperature. The samples obtained in this way are denoted with the general formulae SSNi-x (for the samples prepared on the base of Sipernat) and ASNi-x (for the samples prepared on the base of Aerosil, where x = 0, 0.1, …, 0.5)."
+      },
+      "evaluations": [
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        }
+      ]
+    },
+    {
+      "material_name": "SSNi-0.1",
+      "human_recipe": {
+        "target_compound": "SSNi-0.1",
+        "target_compound_type": "hybrid & organic-inorganic",
+        "synthesis_method": "mechanochemical",
+        "starting_materials": [
+          {
+            "vendor": "Degussa, Germany",
+            "name": "Sipernat 50 (porous silica gel, S-50)",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          },
+          {
+            "vendor": "Superior, Poland",
+            "name": "potato starch",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          },
+          {
+            "vendor": "POCh, Poland",
+            "name": "Ni(NO3)2-6H2O",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          }
+        ],
+        "steps": [
+          {
+            "step_number": 1,
+            "action": "mix",
+            "description": "Preparation of the mixtures takes place using mechanochemistry as a method of carbonaceous matter and catalyst application. The molar ratio of SiO2/starch/Ni2+ was 1:0.3:0.1",
+            "materials": [
+              {
+                "vendor": "Degussa, Germany",
+                "name": "Sipernat 50 (porous silica gel, S-50)",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": "Superior, Poland",
+                "name": "potato starch",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": "POCh, Poland",
+                "name": "Ni(NO3)2-6H2O",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Planetary Mill, PULVERISETTE 7",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": null
+              }
+            ],
+            "conditions": null
+          },
+          {
+            "step_number": 2,
+            "action": "grind",
+            "description": "Mechanochemical treatment of prepared mixtures",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "Ni(NO3)2-6H2O",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Planetary Mill, PULVERISETTE 7",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": "pre-grinding for 15 min, 500 rpm [grinding Ni(NO3)2-6H2O and homogenization of the mixture], followed by grinding for 30 min (2 × 15 min), 750 rpm (heating of the system, resulting starch gelation and better homogenization of the sample)"
+              }
+            ],
+            "conditions": null
+          },
+          {
+            "step_number": 3,
+            "action": "calcine",
+            "description": "All the silica/starch/Ni(NO3)2 mixtures obtained mechanochemically were subjected to the pyrolysis process.",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "silica/starch/Ni(NO3)2 mixture",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "rotary quartz reactor",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": 500.0,
+              "temp_unit": "C",
+              "duration": 3.0,
+              "time_unit": "h",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "nitrogen",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 4,
+            "action": "heat",
+            "description": "heating from 20 to 500 C",
+            "materials": [],
+            "equipment": [
+              {
+                "name": "rotary quartz reactor",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": 20.0,
+              "temp_unit": "C",
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "nitrogen",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 5,
+            "action": "anneal",
+            "description": "isothermal annealing at 500 C",
+            "materials": [],
+            "equipment": [
+              {
+                "name": "rotary quartz reactor",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": 500.0,
+              "temp_unit": "C",
+              "duration": 3.0,
+              "time_unit": "h",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "nitrogen",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 6,
+            "action": "cool",
+            "description": "cooling to room temperature",
+            "materials": [],
+            "equipment": [
+              {
+                "name": "rotary quartz reactor",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "nitrogen",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          }
+        ],
+        "equipment": [
+          {
+            "name": "Planetary Mill, PULVERISETTE 7",
+            "instrument_vendor": "Fritsch, Germany",
+            "settings": null
+          },
+          {
+            "name": "rotary quartz reactor",
+            "instrument_vendor": null,
+            "settings": null
+          }
+        ],
+        "notes": null
+      },
+      "evaluations": [
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        }
+      ]
+    },
+    {
+      "material_name": "SSNi-0.2",
+      "human_recipe": {
+        "target_compound": "SSNi-0.2",
+        "target_compound_type": "hybrid & organic-inorganic",
+        "synthesis_method": "mechanochemical",
+        "starting_materials": [
+          {
+            "vendor": "Degussa, Germany",
+            "name": "Sipernat 50 (porous silica gel, S-50)",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          },
+          {
+            "vendor": "Superior, Poland",
+            "name": "potato starch",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          },
+          {
+            "vendor": "POCh, Poland",
+            "name": "Ni(NO3)2-6H2O",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          }
+        ],
+        "steps": [
+          {
+            "step_number": 1,
+            "action": "mix",
+            "description": "Preparation of the mixtures takes place using mechanochemistry as a method of carbonaceous matter and catalyst application. The molar ratio of SiO2/starch/Ni2+ was 1:0.3:0.2.",
+            "materials": [
+              {
+                "vendor": "Degussa, Germany",
+                "name": "Sipernat 50 (porous silica gel, S-50)",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": "Superior, Poland",
+                "name": "potato starch",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": "POCh, Poland",
+                "name": "Ni(NO3)2-6H2O",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Planetary Mill, PULVERISETTE 7",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": null
+              }
+            ],
+            "conditions": null
+          },
+          {
+            "step_number": 2,
+            "action": "grind",
+            "description": "Mechanochemical treatment of prepared mixtures",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "mixture of Sipernat 50, potato starch and Ni(NO3)2-6H2O",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Planetary Mill, PULVERISETTE 7",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": "pre-grinding for 15 min, 500 rpm [grinding Ni(NO3)2-6H2O and homogenization of the mixture], followed by grinding for 30 min (2 × 15 min), 750 rpm (heating of the system, resulting starch gelation and better homogenization of the sample)"
+              }
+            ],
+            "conditions": null
+          },
+          {
+            "step_number": 3,
+            "action": "calcine",
+            "description": "All the silica/starch/Ni(NO3)2 mixtures obtained mechanochemically were subjected to the pyrolysis process.",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "silica/starch/Ni(NO3)2 mixture",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "rotary quartz reactor",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": 500.0,
+              "temp_unit": "C",
+              "duration": 3.0,
+              "time_unit": "h",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "nitrogen",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 4,
+            "action": "cool",
+            "description": "Cooling to room temperature.",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "pyrolyzed silica/starch/Ni(NO3)2 mixture",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [],
+            "conditions": null
+          }
+        ],
+        "equipment": [
+          {
+            "name": "Planetary Mill, PULVERISETTE 7",
+            "instrument_vendor": "Fritsch, Germany",
+            "settings": null
+          },
+          {
+            "name": "rotary quartz reactor",
+            "instrument_vendor": null,
+            "settings": null
+          }
+        ],
+        "notes": "Heating rate from 20 to 500 C was 10 C min-1. Nitrogen atmosphere flow rate was 120 cm3 min-1."
+      },
+      "evaluations": [
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        }
+      ]
+    },
+    {
+      "material_name": "SSNi-0.3",
+      "human_recipe": {
+        "target_compound": "SSNi-0.3",
+        "target_compound_type": "hybrid & organic-inorganic",
+        "synthesis_method": "mechanochemical",
+        "starting_materials": [
+          {
+            "vendor": "Degussa, Germany",
+            "name": "Sipernat 50 (porous silica gel, S-50)",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          },
+          {
+            "vendor": "Superior, Poland",
+            "name": "potato starch",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          },
+          {
+            "vendor": "POCh, Poland",
+            "name": "Ni(NO3)2-6H2O",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          }
+        ],
+        "steps": [
+          {
+            "step_number": 1,
+            "action": "mix",
+            "description": "Preparation of the mixtures takes place using mechanochemistry as a method of carbonaceous matter and catalyst application. The molar ratio of SiO2/starch/Ni2+ was 1:0.3:0.3.",
+            "materials": [
+              {
+                "vendor": "Degussa, Germany",
+                "name": "Sipernat 50 (porous silica gel, S-50)",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": "Superior, Poland",
+                "name": "potato starch",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": "POCh, Poland",
+                "name": "Ni(NO3)2-6H2O",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Planetary Mill, PULVERISETTE 7",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": null
+              }
+            ],
+            "conditions": null
+          },
+          {
+            "step_number": 2,
+            "action": "grind",
+            "description": "Mechanochemical treatment of prepared mixtures",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "Ni(NO3)2-6H2O",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Planetary Mill, PULVERISETTE 7",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": "pre-grinding for 15 min, 500 rpm [grinding Ni(NO3)2-6H2O and homogenization of the mixture], followed by grinding for 30 min (2 × 15 min), 750 rpm (heating of the system, resulting starch gelation and better homogenization of the sample)."
+              }
+            ],
+            "conditions": null
+          },
+          {
+            "step_number": 3,
+            "action": "calcine",
+            "description": "All the silica/starch/Ni(NO3)2 mixtures obtained mechanochemically were subjected to the pyrolysis process.",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "silica/starch/Ni(NO3)2 mixtures",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "rotary quartz reactor",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": 500.0,
+              "temp_unit": "C",
+              "duration": 3.0,
+              "time_unit": "h",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "nitrogen",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          }
+        ],
+        "equipment": [
+          {
+            "name": "Planetary Mill, PULVERISETTE 7",
+            "instrument_vendor": "Fritsch, Germany",
+            "settings": null
+          },
+          {
+            "name": "rotary quartz reactor",
+            "instrument_vendor": null,
+            "settings": null
+          }
+        ],
+        "notes": null
+      },
+      "evaluations": [
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        }
+      ]
+    },
+    {
+      "material_name": "SSNi-0.4",
+      "human_recipe": {
+        "target_compound": "SSNi-0.4",
+        "target_compound_type": "hybrid & organic-inorganic",
+        "synthesis_method": "mechanochemical",
+        "starting_materials": [
+          {
+            "vendor": "Degussa, Germany",
+            "name": "Sipernat 50 (porous silica gel)",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          },
+          {
+            "vendor": "Superior, Poland",
+            "name": "potato starch",
+            "amount": 0.3,
+            "unit": "mol",
+            "purity": null
+          },
+          {
+            "vendor": "POCh, Poland",
+            "name": "Ni(NO3)2-6H2O",
+            "amount": 0.4,
+            "unit": "mol",
+            "purity": null
+          }
+        ],
+        "steps": [
+          {
+            "step_number": 1,
+            "action": "mix",
+            "description": "pre-grinding and homogenization of the mixture",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "Ni(NO3)2-6H2O",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "Sipernat 50 (porous silica gel)",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "potato starch",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Planetary Mill, PULVERISETTE 7",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": 15.0,
+              "time_unit": "min",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": 500.0,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 2,
+            "action": "mix",
+            "description": "grinding, starch gelation and better homogenization of the sample",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "Sipernat 50 (porous silica gel)",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "potato starch",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "Ni(NO3)2-6H2O",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Planetary Mill, PULVERISETTE 7",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": 30.0,
+              "time_unit": "min",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": 750.0,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 3,
+            "action": "heat",
+            "description": "pyrolysis process",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "mixture",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "rotary quartz reactor",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": 500.0,
+              "temp_unit": "C",
+              "duration": 3.0,
+              "time_unit": "h",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "nitrogen",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 4,
+            "action": "cool",
+            "description": "cooling to room temperature",
+            "materials": [],
+            "equipment": [],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          }
+        ],
+        "equipment": [
+          {
+            "name": "Planetary Mill, PULVERISETTE 7",
+            "instrument_vendor": "Fritsch, Germany",
+            "settings": null
+          },
+          {
+            "name": "rotary quartz reactor",
+            "instrument_vendor": null,
+            "settings": null
+          }
+        ],
+        "notes": "The molar ratio of SiO2/starch/Ni2+ was 1:0.3:0.1–0.5."
+      },
+      "evaluations": [
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        }
+      ]
+    },
+    {
+      "material_name": "SSNi-0.5",
+      "human_recipe": {
+        "target_compound": "SSNi-0.5",
+        "target_compound_type": "hybrid & organic-inorganic",
+        "synthesis_method": "mechanochemical",
+        "starting_materials": [
+          {
+            "vendor": "Degussa, Germany",
+            "name": "Sipernat 50 (porous silica gel, S-50)",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          },
+          {
+            "vendor": "Superior, Poland",
+            "name": "potato starch",
+            "amount": 0.3,
+            "unit": "mol",
+            "purity": null
+          },
+          {
+            "vendor": "POCh, Poland",
+            "name": "Ni(NO3)2-6H2O",
+            "amount": 0.5,
+            "unit": "mol",
+            "purity": null
+          }
+        ],
+        "steps": [
+          {
+            "step_number": 1,
+            "action": "mix",
+            "description": "Preparation of the mixtures takes place using mechanochemistry as a method of carbonaceous matter and catalyst application.",
+            "materials": [
+              {
+                "vendor": "Degussa, Germany",
+                "name": "Sipernat 50 (porous silica gel, S-50)",
+                "amount": 1.0,
+                "unit": "mol",
+                "purity": null
+              },
+              {
+                "vendor": "Superior, Poland",
+                "name": "potato starch",
+                "amount": 0.3,
+                "unit": "mol",
+                "purity": null
+              },
+              {
+                "vendor": "POCh, Poland",
+                "name": "Ni(NO3)2-6H2O",
+                "amount": 0.5,
+                "unit": "mol",
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Planetary Mill, PULVERISETTE 7",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": null
+              }
+            ],
+            "conditions": null
+          },
+          {
+            "step_number": 2,
+            "action": "grind",
+            "description": "pre-grinding for homogenization of the mixture",
+            "materials": [
+              {
+                "vendor": "POCh, Poland",
+                "name": "Ni(NO3)2-6H2O",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Planetary Mill, PULVERISETTE 7",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": 15.0,
+              "time_unit": "min",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": 500.0,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 3,
+            "action": "grind",
+            "description": "grinding resulting starch gelation and better homogenization of the sample",
+            "materials": [],
+            "equipment": [
+              {
+                "name": "Planetary Mill, PULVERISETTE 7",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": 30.0,
+              "time_unit": "min",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": 750.0,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 4,
+            "action": "heat",
+            "description": "pyrolysis process",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "silica/starch/Ni(NO3)2 mixture",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "rotary quartz reactor",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": 500.0,
+              "temp_unit": "C",
+              "duration": 3.0,
+              "time_unit": "h",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "nitrogen",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 5,
+            "action": "cool",
+            "description": "cooling to room temperature",
+            "materials": [],
+            "equipment": [],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "nitrogen",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          }
+        ],
+        "equipment": [
+          {
+            "name": "Planetary Mill, PULVERISETTE 7",
+            "instrument_vendor": "Fritsch, Germany",
+            "settings": null
+          },
+          {
+            "name": "rotary quartz reactor",
+            "instrument_vendor": null,
+            "settings": null
+          }
+        ],
+        "notes": "The molar ratio of SiO2/starch/Ni2+ was 1:0.3:0.1–0.5. Nitrogen atmosphere (120 cm3 min-1 ) and heating rate of 10 C min-1 were used during pyrolysis."
+      },
+      "evaluations": [
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        }
+      ]
+    },
+    {
+      "material_name": "ASNi-0",
+      "human_recipe": {
+        "target_compound": "ASNi-0",
+        "target_compound_type": "hybrid & organic-inorganic",
+        "synthesis_method": "mechanochemical",
+        "starting_materials": [
+          {
+            "vendor": "Kalush, Ukraine",
+            "name": "Aerosil 200",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          },
+          {
+            "vendor": "Superior, Poland",
+            "name": "potato starch",
+            "amount": 0.3,
+            "unit": "mol",
+            "purity": null
+          }
+        ],
+        "steps": [
+          {
+            "step_number": 1,
+            "action": "mix",
+            "description": "Preparation of the mixtures takes place using mechanochemistry as a method of carbonaceous matter and catalyst application.",
+            "materials": [
+              {
+                "vendor": "Kalush, Ukraine",
+                "name": "Aerosil 200",
+                "amount": 1.0,
+                "unit": "mol",
+                "purity": null
+              },
+              {
+                "vendor": "Superior, Poland",
+                "name": "potato starch",
+                "amount": 0.3,
+                "unit": "mol",
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Planetary Mill",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": null
+              }
+            ],
+            "conditions": null
+          },
+          {
+            "step_number": 2,
+            "action": "grind",
+            "description": "Mechanochemical treatment of prepared mixtures",
+            "materials": [],
+            "equipment": [
+              {
+                "name": "Planetary Mill",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": 15.0,
+              "time_unit": "min",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": 500.0,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 3,
+            "action": "grind",
+            "description": "Mechanochemical treatment of prepared mixtures",
+            "materials": [],
+            "equipment": [
+              {
+                "name": "Planetary Mill",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": 30.0,
+              "time_unit": "min",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": 750.0,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 4,
+            "action": "heat",
+            "description": "The pyrolysis was carried out in a rotary quartz reactor in nitrogen atmosphere",
+            "materials": [],
+            "equipment": [
+              {
+                "name": "rotary quartz reactor",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": 500.0,
+              "temp_unit": "C",
+              "duration": 3.0,
+              "time_unit": "h",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "nitrogen",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 5,
+            "action": "cool",
+            "description": "cooling to room temperature",
+            "materials": [],
+            "equipment": [],
+            "conditions": null
+          }
+        ],
+        "equipment": [
+          {
+            "name": "Planetary Mill",
+            "instrument_vendor": "Fritsch, Germany",
+            "settings": null
+          },
+          {
+            "name": "rotary quartz reactor",
+            "instrument_vendor": null,
+            "settings": null
+          }
+        ],
+        "notes": null
+      },
+      "evaluations": [
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        }
+      ]
+    },
+    {
+      "material_name": "ASNi-0.1",
+      "human_recipe": {
+        "target_compound": "ASNi-0.1",
+        "target_compound_type": "hybrid & organic-inorganic",
+        "synthesis_method": "mechanochemical",
+        "starting_materials": [
+          {
+            "vendor": "Kalush, Ukraine",
+            "name": "Aerosil 200",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          },
+          {
+            "vendor": "Superior, Poland",
+            "name": "potato starch",
+            "amount": 0.3,
+            "unit": "mol",
+            "purity": null
+          },
+          {
+            "vendor": "POCh, Poland",
+            "name": "Ni(NO3)2-6H2O",
+            "amount": 0.1,
+            "unit": "mol",
+            "purity": null
+          }
+        ],
+        "steps": [
+          {
+            "step_number": 1,
+            "action": "mix",
+            "description": "Pre-grinding for 15 min, grinding Ni(NO3)2-6H2O and homogenization of the mixture",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "Ni(NO3)2-6H2O",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "Aerosil 200",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "potato starch",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Planetary Mill",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": 15.0,
+              "time_unit": "min",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": 500.0,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 2,
+            "action": "mix",
+            "description": "Grinding for 30 min (2 x 15 min), heating of the system, resulting starch gelation and better homogenization of the sample",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "Ni(NO3)2-6H2O",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "Aerosil 200",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "potato starch",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Planetary Mill",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": 30.0,
+              "time_unit": "min",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": 750.0,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 3,
+            "action": "heat",
+            "description": "Pyrolysis process",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "mixture",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "rotary quartz reactor",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": 500.0,
+              "temp_unit": "C",
+              "duration": 3.0,
+              "time_unit": "h",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "nitrogen",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          }
+        ],
+        "equipment": [
+          {
+            "name": "Planetary Mill",
+            "instrument_vendor": "Fritsch, Germany",
+            "settings": null
+          },
+          {
+            "name": "rotary quartz reactor",
+            "instrument_vendor": null,
+            "settings": null
+          }
+        ],
+        "notes": "The molar ratio of SiO2/starch/Ni2+ was 1:0.3:0.1–0.5. Nitrogen atmosphere (120 cm3 min-1 ), heating from 20 to 500 C (10 C min-1 ), isothermal annealing at 500 C (3 h) and cooling to room temperature."
+      },
+      "evaluations": [
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        }
+      ]
+    },
+    {
+      "material_name": "ASNi-0.2",
+      "human_recipe": {
+        "target_compound": "ASNi-0.2",
+        "target_compound_type": "hybrid & organic-inorganic",
+        "synthesis_method": "mechanochemical",
+        "starting_materials": [
+          {
+            "vendor": "Kalush, Ukraine",
+            "name": "Aerosil 200",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          },
+          {
+            "vendor": "Superior, Poland",
+            "name": "potato starch",
+            "amount": 0.3,
+            "unit": "mol",
+            "purity": null
+          },
+          {
+            "vendor": "POCh, Poland",
+            "name": "Ni(NO3)2-6H2O",
+            "amount": 0.2,
+            "unit": "mol",
+            "purity": null
+          }
+        ],
+        "steps": [
+          {
+            "step_number": 1,
+            "action": "mix",
+            "description": "Pre-grinding and homogenization of the mixture",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "Ni(NO3)2-6H2O",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "Aerosil 200",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "potato starch",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Planetary Mill",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": 15.0,
+              "time_unit": "min",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": 500.0,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 2,
+            "action": "mix",
+            "description": "Grinding, starch gelation and homogenization of the sample",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "Ni(NO3)2-6H2O",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "Aerosil 200",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "potato starch",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Planetary Mill",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": 30.0,
+              "time_unit": "min",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": 750.0,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 3,
+            "action": "heat",
+            "description": "Pyrolysis in a rotary quartz reactor",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "mixture",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "rotary quartz reactor",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": 500.0,
+              "temp_unit": "C",
+              "duration": 3.0,
+              "time_unit": "h",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "nitrogen",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 4,
+            "action": "cool",
+            "description": "Cooling to room temperature",
+            "materials": [],
+            "equipment": [],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          }
+        ],
+        "equipment": [
+          {
+            "name": "Planetary Mill",
+            "instrument_vendor": "Fritsch, Germany",
+            "settings": null
+          },
+          {
+            "name": "rotary quartz reactor",
+            "instrument_vendor": null,
+            "settings": null
+          }
+        ],
+        "notes": "The molar ratio of SiO2/starch/Ni2+ was 1:0.3:0.1–0.5. Heating rate from 20 to 500 C was 10 C min-1. Nitrogen atmosphere flow rate was 120 cm3 min-1."
+      },
+      "evaluations": [
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        }
+      ]
+    },
+    {
+      "material_name": "ASNi-0.3",
+      "human_recipe": {
+        "target_compound": "ASNi-0.3",
+        "target_compound_type": "hybrid & organic-inorganic",
+        "synthesis_method": "mechanochemical",
+        "starting_materials": [
+          {
+            "vendor": "Kalush, Ukraine",
+            "name": "Aerosil 200",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          },
+          {
+            "vendor": "Superior, Poland",
+            "name": "potato starch",
+            "amount": 0.3,
+            "unit": "mol",
+            "purity": null
+          },
+          {
+            "vendor": "POCh, Poland",
+            "name": "Ni(NO3)2-6H2O",
+            "amount": 0.3,
+            "unit": "mol",
+            "purity": null
+          }
+        ],
+        "steps": [
+          {
+            "step_number": 1,
+            "action": "mix",
+            "description": "Pre-grinding and homogenization of the mixture",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "Ni(NO3)2-6H2O",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "Aerosil 200",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "potato starch",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Planetary Mill",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": 15.0,
+              "time_unit": "min",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": true,
+              "stirring_speed": 500.0,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 2,
+            "action": "heat",
+            "description": "Grinding, starch gelation and better homogenization of the sample",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "Aerosil 200",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "potato starch",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "Ni(NO3)2-6H2O",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Planetary Mill",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": 30.0,
+              "time_unit": "min",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": true,
+              "stirring_speed": 750.0,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 3,
+            "action": "calcine",
+            "description": "Pyrolysis process",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "ASNi-0.3 mixture",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "rotary quartz reactor",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": 500.0,
+              "temp_unit": "C",
+              "duration": 3.0,
+              "time_unit": "h",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "nitrogen",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          }
+        ],
+        "equipment": [
+          {
+            "name": "Planetary Mill",
+            "instrument_vendor": "Fritsch, Germany",
+            "settings": null
+          },
+          {
+            "name": "rotary quartz reactor",
+            "instrument_vendor": null,
+            "settings": null
+          }
+        ],
+        "notes": "The molar ratio of SiO2/starch/Ni2+ was 1:0.3:0.1–0.5. Heating rate for pyrolysis was 10 C min-1, and nitrogen flow rate was 120 cm3 min-1."
+      },
+      "evaluations": [
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        }
+      ]
+    },
+    {
+      "material_name": "ASNi-0.4",
+      "human_recipe": {
+        "target_compound": "ASNi-0.4",
+        "target_compound_type": "hybrid & organic-inorganic",
+        "synthesis_method": "mechanochemical",
+        "starting_materials": [
+          {
+            "vendor": "Kalush, Ukraine",
+            "name": "Aerosil 200",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          },
+          {
+            "vendor": "Superior, Poland",
+            "name": "potato starch",
+            "amount": 0.3,
+            "unit": "mol",
+            "purity": null
+          },
+          {
+            "vendor": "POCh, Poland",
+            "name": "Ni(NO3)2-6H2O",
+            "amount": 0.4,
+            "unit": "mol",
+            "purity": null
+          }
+        ],
+        "steps": [
+          {
+            "step_number": 1,
+            "action": "mix",
+            "description": "Preparation of the mixtures takes place using mechanochemistry as a method of carbonaceous matter and catalyst application.",
+            "materials": [
+              {
+                "vendor": "Kalush, Ukraine",
+                "name": "Aerosil 200",
+                "amount": 1.0,
+                "unit": "mol",
+                "purity": null
+              },
+              {
+                "vendor": "Superior, Poland",
+                "name": "potato starch",
+                "amount": 0.3,
+                "unit": "mol",
+                "purity": null
+              },
+              {
+                "vendor": "POCh, Poland",
+                "name": "Ni(NO3)2-6H2O",
+                "amount": 0.4,
+                "unit": "mol",
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Planetary Mill",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": null
+              }
+            ],
+            "conditions": null
+          },
+          {
+            "step_number": 2,
+            "action": "grind",
+            "description": "Mechanochemical treatment of prepared mixtures",
+            "materials": [],
+            "equipment": [
+              {
+                "name": "Planetary Mill, PULVERISETTE 7",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": null
+              }
+            ],
+            "conditions": null
+          },
+          {
+            "step_number": 3,
+            "action": "grind",
+            "description": "pre-grinding for homogenization of the mixture",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "Ni(NO3)2-6H2O",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": 15.0,
+              "time_unit": "min",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": 500.0,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 4,
+            "action": "grind",
+            "description": "grinding",
+            "materials": [],
+            "equipment": [],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": 30.0,
+              "time_unit": "min",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": 750.0,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 5,
+            "action": "heat",
+            "description": "heating of the system, resulting starch gelation and better homogenization of the sample",
+            "materials": [],
+            "equipment": [],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 6,
+            "action": "calcine",
+            "description": "All the silica/starch/Ni(NO3)2 mixtures obtained mechanochemically were subjected to the pyrolysis process.",
+            "materials": [],
+            "equipment": [
+              {
+                "name": "rotary quartz reactor",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "nitrogen",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 7,
+            "action": "heat",
+            "description": "heating",
+            "materials": [],
+            "equipment": [],
+            "conditions": {
+              "temperature": 500.0,
+              "temp_unit": "C",
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 8,
+            "action": "anneal",
+            "description": "isothermal annealing",
+            "materials": [],
+            "equipment": [],
+            "conditions": {
+              "temperature": 500.0,
+              "temp_unit": "C",
+              "duration": 3.0,
+              "time_unit": "h",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 9,
+            "action": "cool",
+            "description": "cooling to room temperature",
+            "materials": [],
+            "equipment": [],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          }
+        ],
+        "equipment": [
+          {
+            "name": "Planetary Mill",
+            "instrument_vendor": "Fritsch, Germany",
+            "settings": null
+          },
+          {
+            "name": "rotary quartz reactor",
+            "instrument_vendor": null,
+            "settings": null
+          }
+        ],
+        "notes": null
+      },
+      "evaluations": [
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        }
+      ]
+    },
+    {
+      "material_name": "ASNi-0.5",
+      "human_recipe": {
+        "target_compound": "ASNi-0.5",
+        "target_compound_type": "hybrid & organic-inorganic",
+        "synthesis_method": "mechanochemical",
+        "starting_materials": [
+          {
+            "vendor": "Kalush, Ukraine",
+            "name": "Aerosil 200",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          },
+          {
+            "vendor": "Superior, Poland",
+            "name": "potato starch",
+            "amount": 0.3,
+            "unit": "mol",
+            "purity": null
+          },
+          {
+            "vendor": "POCh, Poland",
+            "name": "Ni(NO3)2-6H2O",
+            "amount": 0.5,
+            "unit": "mol",
+            "purity": null
+          }
+        ],
+        "steps": [
+          {
+            "step_number": 1,
+            "action": "mix",
+            "description": "Mechanochemical treatment of prepared mixtures",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "Ni(NO3)2-6H2O",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "Aerosil 200",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "potato starch",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "Planetary Mill, PULVERISETTE 7",
+                "instrument_vendor": "Fritsch, Germany",
+                "settings": null
+              }
+            ],
+            "conditions": null
+          },
+          {
+            "step_number": 2,
+            "action": "grind",
+            "description": "pre-grinding and homogenization of the mixture",
+            "materials": [],
+            "equipment": [],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": 15.0,
+              "time_unit": "min",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "air",
+              "stirring": null,
+              "stirring_speed": 500.0,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 3,
+            "action": "grind",
+            "description": "starch gelation and better homogenization of the sample",
+            "materials": [],
+            "equipment": [],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": 30.0,
+              "time_unit": "min",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "air",
+              "stirring": null,
+              "stirring_speed": 750.0,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 4,
+            "action": "heat",
+            "description": "pyrolysis process",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "silica/starch/Ni(NO3)2 mixture",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "rotary quartz reactor",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": 500.0,
+              "temp_unit": "C",
+              "duration": 3.0,
+              "time_unit": "h",
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "nitrogen",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 5,
+            "action": "cool",
+            "description": "cooling to room temperature",
+            "materials": [],
+            "equipment": [],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": "nitrogen",
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          }
+        ],
+        "equipment": [
+          {
+            "name": "Planetary Mill, PULVERISETTE 7",
+            "instrument_vendor": "Fritsch, Germany",
+            "settings": null
+          },
+          {
+            "name": "rotary quartz reactor",
+            "instrument_vendor": null,
+            "settings": null
+          }
+        ],
+        "notes": "The molar ratio of SiO2/starch/Ni2+ was 1:0.3:0.1–0.5. Heating from 20 to 500 C (10 C min-1 ), isothermal annealing at 500 C (3 h) and cooling to room temperature. Nitrogen atmosphere (120 cm3 min-1 )"
+      },
+      "evaluations": [
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        }
+      ]
+    }
+  ]
+}

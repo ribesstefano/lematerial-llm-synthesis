@@ -1,0 +1,358 @@
+{
+  "schema_version": "multi_llm_v1",
+  "paper_id": "2212.12506",
+  "paper_url": "http://arxiv.org/pdf/2212.12506v4",
+  "extractor_order": [
+    "claude-sonnet-4.6",
+    "gemini-3-flash",
+    "qwen3.5-397b-a17b",
+    "deepseek-v3.2"
+  ],
+  "materials": [
+    {
+      "material_name": "GaAs/AlGaAs quantum dot",
+      "human_recipe": {
+        "target_compound": "GaAs/AlGaAs quantum dot",
+        "target_compound_type": "semiconductors & electronics",
+        "synthesis_method": "molecular beam epitaxy",
+        "starting_materials": [
+          {
+            "vendor": null,
+            "name": "GaAs (001) substrate",
+            "amount": 350.0,
+            "unit": "µm",
+            "purity": null
+          },
+          {
+            "vendor": null,
+            "name": "Al0.75Ga0.25As",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          },
+          {
+            "vendor": null,
+            "name": "GaAs",
+            "amount": 4.0,
+            "unit": "nm",
+            "purity": null
+          },
+          {
+            "vendor": null,
+            "name": "Al0.33Ga0.67As",
+            "amount": 69.0,
+            "unit": "nm",
+            "purity": null
+          },
+          {
+            "vendor": null,
+            "name": "Al",
+            "amount": null,
+            "unit": null,
+            "purity": null
+          }
+        ],
+        "steps": [
+          {
+            "step_number": 1,
+            "action": "grow",
+            "description": "A sacrificial layer of Al0.75Ga0.25As is first grown on a 350 µm thick GaAs (001) commercial substrate in a MBE system.",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "Al0.75Ga0.25As",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "GaAs (001) substrate",
+                "amount": 350.0,
+                "unit": "µm",
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "MBE system",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 2,
+            "action": "grow",
+            "description": "Then, the membrane containing the QDs is grown by first depositing a 4 nm thick layer of GaAs to protect the AlGaAs matrix from oxidation, followed by a first 69 nm thick layer of Al0.33Ga0.67As.",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "GaAs",
+                "amount": 4.0,
+                "unit": "nm",
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "Al0.33Ga0.67As",
+                "amount": 69.0,
+                "unit": "nm",
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "MBE system",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 3,
+            "action": "evaporate",
+            "description": "The QDs are obtained by evaporating Al on the surface to form droplets drilling highly symmetric nanoholes on the surface.",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "Al",
+                "amount": null,
+                "unit": null,
+                "purity": null
+              }
+            ],
+            "equipment": [],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 4,
+            "action": "grow",
+            "description": "The holes are then filled with a 1.5 nm thick layer of GaAs and capped with another 70 nm thick layer of Al0.33Ga0.67As for a total thickness of the membrane of roughly 140 nm.",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "GaAs",
+                "amount": 1.5,
+                "unit": "nm",
+                "purity": null
+              },
+              {
+                "vendor": null,
+                "name": "Al0.33Ga0.67As",
+                "amount": 70.0,
+                "unit": "nm",
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "MBE system",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          },
+          {
+            "step_number": 5,
+            "action": "grow",
+            "description": "The structure is then protected with another 4 nm thick layer of GaAs bringing the total thickness to 148 nm.",
+            "materials": [
+              {
+                "vendor": null,
+                "name": "GaAs",
+                "amount": 4.0,
+                "unit": "nm",
+                "purity": null
+              }
+            ],
+            "equipment": [
+              {
+                "name": "MBE system",
+                "instrument_vendor": null,
+                "settings": null
+              }
+            ],
+            "conditions": {
+              "temperature": null,
+              "temp_unit": null,
+              "duration": null,
+              "time_unit": null,
+              "pressure": null,
+              "pressure_unit": null,
+              "atmosphere": null,
+              "stirring": null,
+              "stirring_speed": null,
+              "ph": null
+            }
+          }
+        ],
+        "equipment": [
+          {
+            "name": "MBE system",
+            "instrument_vendor": null,
+            "settings": null
+          }
+        ],
+        "notes": null
+      },
+      "evaluations": [
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        },
+        {
+          "evaluation": {
+            "reasoning": "",
+            "scores": {
+              "structural_completeness_score": null,
+              "structural_completeness_reasoning": "",
+              "material_extraction_score": null,
+              "material_extraction_reasoning": "",
+              "process_steps_score": null,
+              "process_steps_reasoning": "",
+              "equipment_extraction_score": null,
+              "equipment_extraction_reasoning": "",
+              "conditions_extraction_score": null,
+              "conditions_extraction_reasoning": "",
+              "semantic_accuracy_score": null,
+              "semantic_accuracy_reasoning": "",
+              "format_compliance_score": null,
+              "format_compliance_reasoning": "",
+              "overall_score": null,
+              "overall_reasoning": ""
+            },
+            "confidence_level": null,
+            "missing_information": [],
+            "extraction_errors": [],
+            "improvement_suggestions": []
+          }
+        }
+      ]
+    }
+  ]
+}
