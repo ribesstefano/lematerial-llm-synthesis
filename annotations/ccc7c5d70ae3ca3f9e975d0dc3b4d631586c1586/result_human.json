@@ -109,7 +109,7 @@
             "conditions": {
               "temperature": null,
               "temp_unit": null,
-              "duration": 5.0,
+              "durations": [5.0, 10.0, 15.0],
               "time_unit": "h",
               "pressure": null,
               "pressure_unit": null,
