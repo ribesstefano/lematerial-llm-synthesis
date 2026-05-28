@@ -32,8 +32,13 @@ theme:
     - search.highlight
     - content.code.copy
     - content.code.annotate
+  logo: assets/lematerial-logo.png
+  favicon: assets/favicon.png
   icon:
     repo: fontawesome/brands/github
+
+extra_css:
+  - css/custom.css
 
 plugins:
   - search
