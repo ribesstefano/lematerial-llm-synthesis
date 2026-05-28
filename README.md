@@ -4,85 +4,6 @@
 
 An open-source multi-modal toolbox for extracting structured synthesis procedures and performance data from materials science literature at scale. This repository contains the implementations of [LeMat-Synth v1.0](https://arxiv.org/abs/2510.26824) (published on the arXiv and presented at NeurIPS AI4Mat 2025) plus the extendable codebase for usecases in materials science.
 
-## How it works
-
-```
-Paper (PDF or text)
-      │
-      ▼
- Material Extraction   ← "Which materials were synthesized?"
-      │                   → ["Fe2O3", "3%Ru/CaO"]
-      │ for each material
-      ▼
- Synthesis Extraction  ← "How was Fe2O3 made?"
-      │                   → steps, reagents, conditions, equipment
-      ▼
- Judge Evaluation      ← Quality score 1–5 per dimension
-      │
-      │  (optional: --with-performance)
-      ▼
- Figure Extraction     ← Finds plots in the paper
-      ▼
- Plot Data Extraction  ← Reads x/y values from each plot via VLM
-      ▼
- Performance Linking   ← Matches plot series to materials
-      │
-      ▼
- results/<paper>/<material>.json
-```
-
-## Which workflow is right for you?
-
-| My situation | What to use |
-|---|---|
-| Try the tool on **one paper** first | `examples/notebooks/00_quickstart.ipynb` |
-| I have a **folder of PDFs** | `lemat-synth batch /pdfs/ results/ --domain catalysis` |
-| I have **plain text files** | `lemat-synth batch /texts/ results/` |
-| I want full Hydra config control | `examples/scripts/deployment/extract_synthesis_procedure_from_text.py` |
-| **Catalysis** end-to-end case study | `examples/scripts/case_study_thermocatalysis/run_all_papers.py` |
-| **Superconductors** Tc extraction | `examples/scripts/case_study_superconductors/batch_run_tc.py` |
-
-→ See [examples/README.md](examples/README.md) for a complete navigation guide.
-
-## What does the output look like?
-
-Each result file is a JSON with the extracted synthesis procedure:
-
-```json
-{
-  "material": "3%Ru/CaO",
-  "synthesis": {
-    "synthesis_method": "wet impregnation",
-    "starting_materials": [
-      {"name": "RuCl3", "amount": 0.12, "unit": "g", "purity": "99%"},
-      {"name": "CaO",   "amount": 1.0,  "unit": "g"}
-    ],
-    "steps": [
-      {"step_number": 1, "action": "dissolve",   "conditions": {"temperature": 25,  "temp_unit": "C", "duration": 30,  "time_unit": "min"}},
-      {"step_number": 2, "action": "impregnate", "conditions": {"stirring": true,   "duration": 2,   "time_unit": "h"}},
-      {"step_number": 3, "action": "dry",        "conditions": {"temperature": 110, "temp_unit": "C", "duration": 12,  "time_unit": "h"}},
-      {"step_number": 4, "action": "calcine",    "conditions": {"temperature": 500, "temp_unit": "C", "duration": 4,   "time_unit": "h", "atmosphere": "air"}}
-    ]
-  },
-  "evaluation": {"overall_score": 4.7}
-}
-```
-
-→ See [docs/user-guide/output-format.md](docs/user-guide/output-format.md) for a field-by-field explanation.
-
-## Approximate API costs per paper
-
-| Model | Synthesis only | + Performance linking |
-|---|---|---|
-| `gemini-2.5-flash-lite` | ~$0.01 | ~$0.05 |
-| `gemini-2.0-flash` (default) | ~$0.03 | ~$0.10 |
-| `gemini-2.5-flash` | ~$0.05 | ~$0.15 |
-| `claude-sonnet-4.6` | ~$0.10 | ~$0.25 |
-
-Costs depend on paper length and the number of materials. Test on a small batch first
-(`lemat-synth batch ... --max 5`). Performance linking adds cost because Claude reads
-each figure image.
-
 ![](assets/overview.png)
 
 [![Paper](https://img.shields.io/badge/arXiv-2512.04562-b31b1b.svg)](https://arxiv.org/abs/2510.26824)
@@ -185,7 +106,7 @@ The data is hosted as a LeMaterial Dataset on HuggingFace: [LeMat-Synth](https:/
 
 ### Extract from HuggingFace Dataset
 ```bash
-uv run examples/scripts/deployment/extract_synthesis_procedure_from_text.py \
+uv run examples/scripts/extract_synthesis_procedure_from_text.py \
   data_loader=default \
   synthesis_extraction=default \
   material_extraction=default \
@@ -195,7 +116,7 @@ uv run examples/scripts/deployment/extract_synthesis_procedure_from_text.py \
 
 ### Extract Synthesis Locally
 ```bash
-uv run examples/scripts/deployment/extract_synthesis_procedure_from_text.py \
+uv run examples/scripts/extract_synthesis_procedure_from_text.py \
   data_loader=local \
   data_loader.architecture.data_dir="/path/to/markdown" \
   synthesis_extraction=default \
@@ -305,39 +226,23 @@ Additional flags for both batch scripts: `--max N` to limit to the first N paper
 - Open `visualisation_tc_with_human_annotation.ipynb` to compare pipeline output against human-annotated ground truth.
 
 ### Customize LeMat-Synth
-
-**Change the LLM** — append a model override to any script:
-```bash
-uv run examples/scripts/deployment/extract_synthesis_procedure_from_text.py \
-  synthesis_extraction.architecture.lm.llm_name=claude-sonnet-4.6
-```
-
-**Use local files instead of HuggingFace:**
-```bash
-uv run examples/scripts/deployment/extract_synthesis_procedure_from_text.py \
-  data_loader=local \
-  data_loader.architecture.data_dir="/path/to/my/text_files"
-```
-
-**Use the simple CLI** (no Hydra required):
-```bash
-lemat-synth extract my_paper.pdf --model gemini-2.5-flash --domain catalysis
-lemat-synth batch /papers/ results/ --with-performance --domain electrochemistry
-```
-
-**Use the Python API** for full programmatic control:
-```python
-from llm_synthesis.services.pipelines import SynthesisPerformancePipeline
-# See docs/getting-started/quickstart.md and examples/notebooks/00_quickstart.ipynb
-```
-
-→ Full guide: [docs/user-guide/configuration.md](docs/user-guide/configuration.md)
+*Work in Progress*
+{EXAMPLES HOW TO GENERALIZE/ABSTRACT EXTRACTION PIPELINE}
 
 ---
 
 ## 📝 Citation
 
 Cite us:
+
+```bibtex
+@article{lederbauer2026mapping,
+  title={Mapping Materials Science: a multi-modal toolbox to curate broad synthesis procedure databases from scientific literature},
+  author={WIP},
+  journal={WIP},
+  year={2026}
+}
+```
 
 ```bibtex
 @article{lederbauer2025lemat,
