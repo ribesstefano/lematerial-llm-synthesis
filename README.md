@@ -37,7 +37,7 @@ uv sync && uv pip install -e .
 
 <details>
 <summary><b>macOS/Linux</b></summary>
-```bash
+```
 cp .env.example .env
 # Edit `.env` to add:
 #   MISTRAL_API_KEY=your_api_key # if using Mistral models and Mistral OCR
