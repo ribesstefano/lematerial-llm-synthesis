@@ -89,9 +89,9 @@ The data is hosted as a LeMaterial Dataset on HuggingFace: [LeMat-Synth](https:/
 
 1. **Apply for access** (request will be instantly approved)
 2. **Install HuggingFace CLI** ([guide](https://huggingface.co/docs/huggingface_hub/en/guides/cli))
-   - Recommended: `pip install -U "huggingface_hub[cli]"`
-   - Or (macOS): `brew install huggingface-cli`
-3. **Login with access token**: `huggingface-cli login`
+   - Recommended: `pip install -U "huggingface_hub"`
+   - Or (macOS): `brew install hf`
+3. **Login with access token**: `hf auth login`
 
 ### Available Datasets
 
