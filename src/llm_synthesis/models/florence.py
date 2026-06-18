@@ -91,6 +91,17 @@ class FlorenceSegmenter:
         model = model.merge_and_unload()
 
         self.model = model.to(self.device)
+
+        # Newer transformers removed forced_bos_token_id from
+        # Florence2LanguageConfig; add it so generate() does not fail.
+        lang_cfg = getattr(
+            getattr(self.model, "language_model", None), "config", None
+        )
+        if lang_cfg is not None and not hasattr(
+            lang_cfg, "forced_bos_token_id"
+        ):
+            lang_cfg.forced_bos_token_id = None
+
         logger.info("Florence-2 model loaded on %s", self.device)
 
     def _parse_output(self, output_text: str) -> list[dict]:
